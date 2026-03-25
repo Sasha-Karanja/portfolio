@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Sasha — Food Science student at JKUAT">
+    <title>Sasha | Projects</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Skip link: allows keyboard users to skip the nav -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">Sasha</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="projects-section">
+      <div class="container">
+        <h2>My Projects</h2>
+        <div class="cards">
+
+          <!-- Project: Personal Portfolio -->
+          <article class="card">
+            <span class="card-tag">Web Dev</span>
+            <h3>Personal Portfolio Website</h3>
+            <p>A responsive portfolio website built with pure HTML5 and CSS3 to showcase 
+            my journey and academic background in Food Science and Technology.</p>
+            <a href="http://192.168.100.33:2345" class="card-link">View project-></a>
+          </article>
+          
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Sasha Karanja — BSc Food Science &amp; Technology</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+  <script>
+     document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

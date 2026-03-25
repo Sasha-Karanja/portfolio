@@ -1,0 +1,91 @@
+<!-- Paste this into EVERY HTML file and customise the <title> and <main> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- REQUIRED for responsive design on mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Sasha — Food Science student at JKUAT">
+  <title>Sasha | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Skip link: allows keyboard users to skip the nav -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">Sasha</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav aria-label="Main navigation">
+        <ul>
+          <!-- Add class="active" to the current page's link -->
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- PAGE-SPECIFIC CONTENT GOES HERE -->
+     
+    <section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <img src="images/profile.jpeg" alt="Sasha Karanja" class="hero-img">
+            <h1>Hi, I'm <span class="accent">Sasha</span></h1>
+            <p>My name is Sasha Karanja. I am student in Jomo Kenyatta University and Technology pursuing Bsc.Food Science and Technology. Food quality, safety and disbursement and all food related procedures are a passion of mine.</p>
+        </div>
+        <div class="hero-btns">
+        <a href="projects.html" class="btn">View My Projects</a>
+        <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+        </div>
+    </div>
+    </section>
+
+    <section class="expertise-section">
+        <div class="container">
+            <h2>Core Expertise</h2>
+            <div class="expertise-grid">
+                <div class="expertise-item">
+                    <h3>Food Safety</h3>
+                    <p>Ensuring all food related procedures follow strict safety and quality standards.</p>
+                </div>
+                <div class="expertise-item">
+                    <h3>Quality Assurance</h3>
+                    <p>Dedication to maintaining the highest standards in food quality and disbursement.</p>
+                </div>
+                <div class="expertise-item">
+                    <h3>Sustainable Systems</h3>
+                    <p>Exploring innovative ways to improve food systems for a better future.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quick-contact">
+        <div class="container">
+            <h2>Get in touch</h2>
+            <p>Email: <a href="mailto:sasha.karanja@students.jkuat.ac.ke">sasha.karanja@students.jkuat.ac.ke</a></p>
+            <p>Phone: <a href="tel:+254736503156">+254 736 503156</a></p>
+        </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Sasha Karanja — BSc Food Science &amp; Technology</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+  <script>
+     document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

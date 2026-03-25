@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Sasha — Food Science student at JKUAT">
+    <title>Sasha | About</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Skip link: allows keyboard users to skip the nav -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">Sasha</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="about-section">
+      <div class="container about-grid">
+        <aside>
+          <!-- Profile photo -->
+          <img src="images/profile.jpeg"
+              alt="Sasha Karanja — profile photo"
+              class="profile-img">
+          <h3>Sasha Karanja</h3>
+          <p class="role">Food Science Student, Year 2</p>
+        </aside>
+
+        <div>
+          <h2>About Me</h2>
+          <p>My name is Sasha Karanja. I am  student in Jomo Kenyatta University of Agriculture and Technology pursuing Bsc.Food Science and Technology. Food quality, safety and disbursement and all food related procedures are a passion of mine.</p>
+
+          <h3>Technical Skills</h3>
+          <ul class="skills-list">
+              <li>Food Microbiology &amp; Hygiene</li>
+              <li>Food Chemistry &amp; Analysis</li>
+              <li>HACCP &amp; Food Safety Management</li>
+              <li>Sensory Evaluation of Foods</li>
+              
+          </ul>
+
+          <h3>Education</h3>
+          <table>
+              <thead>
+              <tr><th>Qualification</th><th>Institution</th><th>Year</th></tr>
+              </thead>
+              <tbody>
+              <tr><td>BSc Food Science and Technology</td><td>JKUAT</td><td>2023–Present</td></tr>
+              <tr><td>KCSE</td><td>High School</td><td>2022</td></tr>
+              </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Sasha Karanja — BSc Food Science &amp; Technology</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+  <script>
+     document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
